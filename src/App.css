@@ -12,11 +12,18 @@ body {
   display: block;
   width: 400px;
   height: 350px;
-  margin-left: 600px;
+  margin:0 auto;
   background-color: black;
   border: 2px solid #47476b;
  
 }
+@media (max-width: 420px) {
+  #calculator {
+    float: none;
+    width: 250px;
+  }
+}
+
 
 button{
   display: inline-block;
@@ -30,6 +37,13 @@ button{
   
 }
 
+@media (max-width: 402px) {
+  /* For mobile phones: */
+  button{
+    width: 25%
+  }
+}
+
 button:hover {
     color: black;
     outline: .05em solid grey;
@@ -40,16 +54,38 @@ button:hover {
   background-color: #ac3939;
 }
 
+@media (max-width: 402px) {
+  .clear{
+    width: 45%
+  }
+}
 .divide{
   width: 140px;
 }
 
+@media (max-width: 402px) {
+  .divide{
+    width: 30%
+  }
+}
 .zero{
   width: 185px;
 }
 
+@media (max-width: 402px) {
+  .zero{
+    width: 49%
+  }
+}
+
 .decimal{
   width: 115px;
+}
+
+@media (max-width: 402px) {
+  .decimal{
+    width: 29%
+  }
 }
 
 .vision{
@@ -63,6 +99,13 @@ button:hover {
 .equal{
   position: absolute;
   height: 100px;
+  width:101px;
   background-color: #004466;
   
+}
+
+@media (max-width: 401px) {
+  .equal{
+   width:63px;
+  }
 }
